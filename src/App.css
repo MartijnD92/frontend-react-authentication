@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+body {
+	background: linear-gradient(45deg, #194350, #9dbeb9) fixed;
+	background-repeat: no-repeat;
+	color: #000;
+	font-family: 'Orelega One', serif;
+	padding: 2em;
+	display: flex;
+	justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+	margin-top: 3em;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-bar {
+	display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-bar li {
+	margin: 1em 2em;
+	list-style-type: none;
+}
+.nav-bar a {
+	color: #000;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+form {
+	width: 500px;
+	background: #f1f1f1;
+	border-radius: 10px;
+	padding: 0.5em;
+	box-shadow: 3px 3px 10px rgba(51, 51, 51, 0.5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+fieldset {
+	border: 2px solid #333;
+	padding: 2rem 6rem;
+}
+
+label {
+	display: block;
+	width: 75%;
+}
+
+input {
+	display: block;
+	font-family: inherit;
+	font-size: 1.4rem;
+	outline: none;
+	border: 0;
+	border-bottom: 1px solid #333;
+	background: inherit;
+	margin-bottom: 2rem;
+}
+
+.submit-btn {
+	display: block;
+	border: 0;
+	border-bottom: 2px solid #333;
+	background: inherit;
+	font-family: inherit;
+	font-size: 2em;
+	cursor: pointer;
 }
